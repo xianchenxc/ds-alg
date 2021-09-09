@@ -1,5 +1,5 @@
 #include <iostream>
-#include "linearList.h"
+#include "./linearList.h"
 
 using namespace std;
 
@@ -12,7 +12,7 @@ protected:
   T *data;                  // 存放数组
   int maxSize;              // 最大可容纳表项的项数
   int last;                 // 当前已存表项的最后一项
-  void resize(int newSize); // 改变 data 数组空间大小
+  void reSize(int newSize); // 改变 data 数组空间大小
 
 public:
   SeqList(int sz = defaultSize);          // 构造函数
@@ -41,7 +41,7 @@ public:
   bool Remove(int i, T &x);
   bool isEmpty() { return (last == -1) ? true : false; }
   bool isFull() { return (last == maxSize - 1) ? true : false; }
-  void input();
-  void output();
+  void input(){};
+  void output(){};
   SeqList<T> operator=(SeqList<T> &L);
 };

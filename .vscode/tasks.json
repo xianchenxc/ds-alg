@@ -11,7 +11,7 @@
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe",
 				"--target=i686-pc-mingw32",
-				"-lm"
+				"-lm",
 			],
 			"options": {
 				"cwd": "${fileDirname}"
