@@ -5,8 +5,8 @@ template <class T>
 class LinearList
 {
 public:
-  LinearList();                                // 构造函数
-  ~LinearList();                               // 析构函数
+  LinearList(){};                              // 构造函数
+  ~LinearList(){};                             // 析构函数
   virtual int Size() const = 0;                // 求表最大体积
   virtual int Length() const = 0;              // 求表长度
   virtual int Search(T &x) const = 0;          // 在表中搜索给定值 x

@@ -1,29 +1,27 @@
 {
 	"version": "2.0.0",
+	"options": {
+		"cwd": "${workspaceFolder}/build"
+	},
 	"tasks": [
 		{
 			"type": "shell",
-			"label": "clang.exe build active file",
-			"command": "C:\\Program Files\\LLVM\\bin\\clang++.exe",
+			"label": "cmake",
+			"command": "cmake",
 			"args": [
-				"-g",
-				"${file}",
-				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe",
-				"--target=i686-pc-mingw32",
-				"-lm",
-			],
-			"options": {
-				"cwd": "${fileDirname}"
-			},
-			"problemMatcher": [
-				"$gcc"
-			],
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			},
-			"detail": "编译器: \"C:\\Program Files\\LLVM\\bin\\clang.exe\""
+				".."
+			]
+		},
+		{
+			"label": "make",
+			"command": "mingw32-make.exe"
+		},
+		{
+			"label": "build",
+			"dependsOn": [
+				"cmake",
+				"make"
+			]
 		}
 	]
 }

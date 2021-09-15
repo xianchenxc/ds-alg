@@ -1,13 +1,13 @@
 #include <iostream>
-#include "./seqList.h"
+#include "lib/seqList.h"
 
 using namespace std;
 
 int main()
 {
-  SeqList<string> stringSeq;
-  cerr << stringSeq.isEmpty() << endl;
-  string a = "hello c++";
-  stringSeq.Insert(1, a);
-  cerr << stringSeq.isEmpty() << endl;
+    SeqList<int> stringSeq(2);
+    cerr << stringSeq.isEmpty() << endl;
+    int a = 1;
+    stringSeq.Insert(1, a);
+    cout << stringSeq.isEmpty() << endl;
 }
