@@ -30,7 +30,7 @@ public:
   LinkNode<T> *getHead() const { return first; }
   LinkNode<T> *Search(T &x);
   LinkNode<T> *Locate(int i);
-  bool getData(int i, T &x);
+  bool getData(int i, T &x) const;
   void setData(int i, T &x);
   bool Insert(int i, T &x);
   bool Remove(int i, T &x);
