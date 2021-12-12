@@ -1,4 +1,4 @@
-#include "seqStack.h"
+#include "SeqStack.h"
 
 template <class T>
 SeqStack<T>::SeqStack(int sz) : top(-1), maxSize(sz)

@@ -1,10 +1,12 @@
 /**
  * 基于数组的存储表示实现的栈称为顺序栈
- * 
-*/
+ *
+ */
 #include <assert.h>
-#include <iostream.h>
-#include "stack.h"
+#include <iostream>
+#include "Stack.h"
+
+using namespace std;
 
 const int stackIncreament = 20;
 
