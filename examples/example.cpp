@@ -1,6 +1,5 @@
 #include <iostream>
-#include <string>
-#include "seqList.h"
+#include "../lib/seqList.h"
 
 using namespace std;
 
